@@ -21,15 +21,14 @@ function App() {
       <Nav 
         categories={categories}
         setCurrentCategory={setCurrentCategory}
-        currentCategory={currentCategory}>
-      </Nav>
+        currentCategory={currentCategory}
+      ></Nav>
       <main>
-          <Gallery></Gallery>
-          <About></About>        
+        <Gallery currentCategory={currentCategory}></Gallery>
+        <About></About>        
       </main>
     </div>
   );
 }
 
 export default App;
-
